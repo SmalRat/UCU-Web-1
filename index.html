@@ -8,9 +8,163 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <header class="site-top-header">
+      <div class="logo-div">
+        <img src="logo.jpg" alt="Company logo" class="logo">
+      </div>
+    <div class="navbar-div">
+      <nav class="navigation-bar">
+        <a href="#">Home</a>
+        <a href="#">Interview</a>
+        <a href="#">Languages</a>
+        <a href="#">Data Structure</a>
+        <a href="#">Algorithm</a>
+      </nav>
+    </div>
+    </header>
     <main>
-        <h1>Welcome</h1>  
+      <section class="intro-section">
+        <img src="intro-image.jpg" alt="Introduction image" class="intro-image">
+        <h1>Discover Your Life, Travel Where You Want</h1>
+        <p>Would you explore natur paradise in the world, let’s find the best destination in world with us</p>
+      </section>
+      <section class="tickets-section">
+        <nav class="tickets-options">
+          <div class="tickets-options-div">
+            <button class="tickets-options-buttons"><img src="plane1.jpg" alt="plane">Flight</button>
+            <button class="tickets-options-buttons"><img src="hotel.jpg" alt="hotel">Hotel</button>
+          </div>
+        </nav>
+        <div class="tickets-menu">
+          <div class="destinations-input-div">
+            <div class="leaving-place-div">
+              <span>Leaving from</span>
+              <select name="Leave from" id="1">
+                <option value="Lviv">Lviv</option>
+                <option value="Kyiv">Kyiv</option>
+                <option value="Kharkiv">Kharkiv</option>
+              </select>
+            </div>
+            <img src="plane2.jpg" alt="plane">
+            <div class="destination-place-div">
+              <span>Going to</span>
+              <select name="Going to" id="2">
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Washington">Washington</option>
+              </select>
+            </div>
+          </div>
+          <div class="date-input-div">
+            <div class="leaving-date-div">
+              <span>Leave <img src="plane2.jpg" alt="plane"></span>
+              <input type="date" id="leave date" min="2023-06-01" max="2033-08-31"/>
+            </div>
+            <img src="calendar.jpg" alt="calendar">
+            <div class="arrival-date-div">
+              <span>Return <img src="plane2.jpg" alt="plane"></span>
+              <input type="date" id="return date" min="2023-06-01" max="2033-08-31"/>
+            </div>
+          </div>
+          <div class="tickets-search-div">
+            <button><img src="lens.jpg" alt="lens"></button>
+          </div>
+        </div>
+      </section>
+      <section class="offers-section">
+        <h1>Special upcoming offers</h1>
+        <div class="switch-tab-bar">
+          <div class="switch-tab">
+            <button type="button">Team</button>
+            <button type="button">Couple</button>
+            <button type="button">Family</button>
+          </div>
+        </div>
+        <div class="offers-tab-bar">
+          <div class="offers-tab">
+
+            <article class="offer">
+              <div class="offer-intro">
+                <img src="offer1.jpg" alt="Offer image" class="offer-image">
+                <time class="offer-date">14 FEB 2022</time>
+              </div>
+              <div class="offer-caption">
+                <div class="offer-type-and-length">
+                  <span class="offer-type">Relax</span>
+                  <span class="offer-length">3 Days, 3 Nights</span>
+                </div>
+
+                <div class="offer-info">
+                  <h4>Loga Sea</h4>
+                  <div class="price-and-button-bar">
+                    <div class="price-div">
+                      <span>700$</span>
+                      <span>/Person</span>
+                    </div>
+                    <button type="button">Book now</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="offer">
+              <div class="offer-intro">
+                <img src="offer2.jpg" alt="Offer image" class="offer-image">
+                <time class="offer-date">18 JUN 2022</time>
+              </div>
+              <div class="offer-caption">
+                <div class="offer-type-and-length">
+                  <span class="offer-type">Adventure</span>
+                  <span class="offer-length">4 Days, 3 Nights</span>
+                </div>
+
+                <div class="offer-info">
+                  <h4>Ansgar Scheffold</h4>
+                  <div class="price-and-button-bar">
+                    <div class="price-div">
+                      <span>400$</span>
+                      <span>/Person</span>
+                    </div>
+                    <button type="button">Book now</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="offer">
+              <div class="offer-intro">
+                <img src="offer3.jpg" alt="Offer image" class="offer-image">
+                <time class="offer-date">22 DEC 2022</time>
+              </div>
+              <div class="offer-caption">
+                <div class="offer-type-and-length">
+                  <span class="offer-type">Relax</span>
+                  <span class="offer-length">7 Days, 6 Nights</span>
+                </div>
+
+                <div class="offer-info">
+                  <h4>Lona X</h4>
+                  <div class="price-and-button-bar">
+                    <div class="price-div">
+                      <span>340$</span>
+                      <span>/Person</span>
+                    </div>
+                    <button type="button">Book now</button>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <div class="side-image-tab"></div>
+      <div class="side-text-tab"></div>
+    </section>
     </main>
+    <footer></footer>
 	<script src="index.js"></script>
   </body>
 </html>
