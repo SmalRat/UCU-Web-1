@@ -1,0 +1,339 @@
+body {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #E5E5E5;
+}
+a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+}
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+@media (max-width: 1200px) { 
+    body { 
+        font-size: 10px;
+    }
+}
+@media (max-width: 1000px) { 
+    body { 
+        font-size: 8px;
+    }
+}
+@media (max-width: 800px) { 
+    body { 
+        font-size: 6px;
+    }
+}
+@media (max-width: 600px) { 
+    body { 
+        font-size: 6px;
+    }
+}
+.top-header{
+    width: 82%;
+    box-sizing: content-box;
+    padding: 1.5em 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+}
+.top-nav{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-text-span{
+    font-size: 3em;
+    font-weight: 500;
+}
+.top-nav a{
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+.top-nav-button{
+    padding: 0.875em 2.75em;
+    background-color: #FFFFFF;
+    border-radius: 0.625em;
+}
+.top-nav-button a{
+    color: #3E86F5;
+}
+.intro-section{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+.intro-section-wrapper{
+    position: relative;
+}
+.intro-text-container{
+    position: absolute;
+    top: 32.5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    padding: 0 20%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.intro-text-container .intro-heading{
+    font-size: 4em;
+    font-weight: 600;
+}
+.intro-text-container .intro-caption{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.intro-image{
+    width: 100%;
+}
+.booking-section{
+    position: absolute;
+    margin-top: -10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.booking-section-wrapper{
+    width: 82%;
+}
+.booking-nav{
+    width: fit-content;
+    border: 0px solid black;
+    padding: 20px;
+    border-radius: 25px 25px 0px 0px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.booking-nav img{
+    width: 25px;
+    height: 25px;
+}
+.tickets-options-div{
+    font-size: 1.125em;
+    display: flex;
+    gap: 1em;
+}
+.tickets-options-div button{
+    font-size: 1.125em;
+    color: #000000;
+}
+.tickets-options-buttons{
+    padding: 1em 1.25em;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    gap: 0.25em;
+    justify-content: center;
+    align-items: center;
+}
+.flight-button{
+    background-color: #FFFFFF;
+}
+.hotel-button{
+    background-color: #FFFFFF;
+}
+.active-tickets-options-button{
+    background-color: rgba(62, 134, 245, 0.2);
+}
+.booking-menu{
+    background-color: white;
+    padding: 3.75em 3em;
+    border-radius: 0px 25px 25px 25px;
+}
+.booking-menu-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2.5em;
+}
+.booking-menu img{
+    width: 25px;
+    height: 25px;
+}
+.booking-input-div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 1.95em;
+}
+.single-input-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.75em 1.4em;
+    border-style: solid;
+    border-color: rgba(172, 172, 172, 0.5);
+    border-width: 2px;
+    border-radius: 25px;
+}
+.destinations-input-div{
+    gap: 27px;
+}
+.date-input-div{
+    gap: 47px;
+}
+.booking-input-img-div{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-style: dashed;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.selection-div{
+    display: flex;
+    gap: 0.25em;
+    flex-direction: column;
+}
+.selection-purpose-span{
+    display: flex;
+    align-items: center;
+    gap: 0.4375em;
+    font-size: 1.125em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.half-rotated-image{
+    transform: rotate(180deg);
+}
+.booking-selection{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #000000;
+}
+.tickets-search-outer-div{
+    height:0;
+    width:10%;
+    padding-top:10%;
+    background-color: rgba(62, 134, 245, 0.8);
+    border-radius: 100%;
+}
+.tickets-search-inner-div{
+    /* height: 100%;
+    padding-left:100%;
+    background-color: rgba(62, 134, 245, 0.8);
+    border-radius: 100%;
+    overflow: hidden; */
+}
+.tickets-search-button{
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 0;
+    box-sizing: content-box;
+}
+.offers-heading-div{
+    text-align: center;
+}
+.offers-heading{
+    padding: 8em 0 1.25em 0;
+    font-size: 3em;
+    margin: 0;
+}
+.switch-tab-bar{
+    display: flex;
+    justify-content: center;
+}
+.switch-tab{
+    width: fit-content;
+    padding: 0.625em;
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 0.625em;
+    border-radius: 0.375em;
+}
+.switch-button{
+    padding: 0.625em 1.5em;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 0.625em;
+}
+.team-button{
+    color: #FFFFFF;
+    background-color: #3E86F5;
+}
+.offers-tab-bar{
+    padding: 2.5em;
+    display: flex;
+    justify-content: center;
+}
+.offers-tab{
+    display: flex;
+    gap: 1.25em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width: 1200px) { 
+    .offers-tab { 
+        flex-direction: column;
+    }
+}
+.offer-article{
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    padding: 1.3125em 0.8125em 1.5625em 1.6875em;
+    width: 25%;
+    min-width: 300px;
+}
+.offer-intro{
+    display: flex;
+    justify-content: center;
+}
+.offer-image{
+    object-fit: cover;
+    width: 100%;
+    height: 273px;
+    border-radius: 50px;
+}
+.offer-date-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.offer-date-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer-date{
+    display: block;
+    text-align: center;
+    writing-mode: vertical-lr;
+    letter-spacing: 1em;
+}
+
+/* .offer-date-div {
+    display: table;
+  }
+.offer-date-wrapper {
+    width: 0;
+    padding: 50% 0%;
+}
+.offer-date {
+    display: block;
+    transform-origin: top left;
+    transform: rotate(90deg) translate(0, -100%);
+    margin-top: 100%;
+    white-space: nowrap;
+    letter-spacing: 1em;
+} */

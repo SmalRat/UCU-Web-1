@@ -5,88 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <header class="site-top-header">
+    <header class="top-header">
       <div class="logo-div">
-        <img src="logo.jpg" alt="Company logo" class="logo">
+        <!-- <img src="logo.jpg" alt="Company logo" class="logo"> -->
+        <span class="logo-text-span">Treloo</span>  
       </div>
-    <div class="navbar-div">
-      <nav class="navigation-bar">
-        <a href="#">Home</a>
-        <a href="#">Interview</a>
-        <a href="#">Languages</a>
-        <a href="#">Data Structure</a>
-        <a href="#">Algorithm</a>
-      </nav>
-    </div>
+      <div class="top-nav-div">
+        <nav class="top-nav">
+          <a href="#">Review</a>
+          <a href="#">Tips</a>
+          <a href="#">Alerts</a>
+          <a href="#">Blog</a>
+          <span class="top-nav-button"><a href="#">Blog</a></span>
+        </nav>
+      </div>
     </header>
     <main>
       <section class="intro-section">
-        <img src="intro-image.png" alt="Introduction image" class="intro-image">
-        <h1>Discover Your Life, Travel Where You Want</h1>
-        <p>Would you explore natur paradise in the world, let’s find the best destination in world with us</p>
+        <div class="intro-section-wrapper">
+          <img src="intro-image.jpg" alt="Introduction image" class="intro-image">
+          <div class="intro-text-container">
+            <h1 class="intro-heading">Discover Your Life, Travel Where You Want</h1>
+            <p class="intro-caption">Would you explore natur paradise in the world, let’s find the best destination in world with us</p>
+          </div>
+        </div>
       </section>
-      <section class="tickets-section">
-        <nav class="tickets-options">
-          <div class="tickets-options-div">
-            <button class="tickets-options-buttons"><img src="plane1.png" alt="plane">Flight</button>
-            <button class="tickets-options-buttons"><img src="hotel.png" alt="hotel">Hotel</button>
-          </div>
-        </nav>
-        <div class="tickets-menu">
-          <div class="destinations-input-div">
-            <div class="leaving-place-div">
-              <span>Leaving from</span>
-              <select name="Leave from" id="1">
-                <option value="Lviv">Lviv</option>
-                <option value="Kyiv">Kyiv</option>
-                <option value="Kharkiv">Kharkiv</option>
-              </select>
+      <section class="booking-section">
+        <div class="booking-section-wrapper">
+          <nav class="booking-nav">
+            <div class="tickets-options-div">
+              <button class="tickets-options-buttons flight-button active-tickets-options-button"><img src="plane1.png" alt="plane"><span class="ticket-options-span">Flight</span></button>
+              <button class="tickets-options-buttons hotel-button"><img src="hotel.png" alt="hotel"><span class="ticket-options-span">Hotel</span></button>
             </div>
-            <img src="plane2.png" alt="plane">
-            <div class="destination-place-div">
-              <span>Going to</span>
-              <select name="Going to" id="2">
-                <option value="London">London</option>
-                <option value="Paris">Paris</option>
-                <option value="Washington">Washington</option>
-              </select>
+          </nav>
+          <div class="booking-menu">
+            <div class="booking-menu-wrapper">
+              <div class="booking-input-div">
+                <div class="destinations-input-div single-input-div">
+                  <div class="leaving-place-div selection-div">
+                    <span class="selection-purpose-span">Leaving from</span>
+                    <select class="booking-selection" name="Leave from" id="1">
+                      <option value="Lviv">Lviv</option>
+                      <option value="Kyiv">Kyiv</option>
+                      <option value="Kharkiv">Kharkiv</option>
+                    </select>
+                  </div>
+                  <div class="booking-input-img-div"><img src="plane2.png" alt="plane"></div>
+                  <div class="destination-place-div selection-div">
+                    <span class="selection-purpose-span">Going to</span>
+                    <select class="booking-selection" name="Going to" id="2">
+                      <option value="London">London</option>
+                      <option value="Paris">Paris</option>
+                      <option value="Washington">Washington</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="date-input-div single-input-div">
+                  <div class="leaving-date-div selection-div">
+                    <span class="selection-purpose-span">Leave <img src="plane3.png" alt="plane"></span>
+                    <input class="booking-selection" type="date" id="leave date" min="2023-06-01" max="2033-08-31"/>
+                  </div>
+                  <div class="booking-input-img-div"><img src="calendar.png" alt="calendar"></div>
+                  <div class="arrival-date-div selection-div">
+                    <span class="selection-purpose-span">Return <img class = "half-rotated-image" src="plane3.png" alt="plane"></span>
+                    <input class="booking-selection" type="date" id="return date" min="2023-06-01" max="2033-08-31"/>
+                  </div>
+                </div>
+              </div>
+              <div class="tickets-search-outer-div">
+                <div class="tickets-search-inner-div">
+                  <button class="tickets-search-button">
+                    <!-- <img src="lens.jpg" alt="lens"> -->
+                  </button>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="date-input-div">
-            <div class="leaving-date-div">
-              <span>Leave <img src="plane3.png" alt="plane"></span>
-              <input type="date" id="leave date" min="2023-06-01" max="2033-08-31"/>
-            </div>
-            <img src="calendar.png" alt="calendar">
-            <div class="arrival-date-div">
-              <span>Return <img src="plane3.png" alt="plane"></span>
-              <input type="date" id="return date" min="2023-06-01" max="2033-08-31"/>
-            </div>
-          </div>
-          <div class="tickets-search-div">
-            <button><img src="lens.jpg" alt="lens"></button>
           </div>
         </div>
       </section>
       <section class="offers-section">
-        <h2>Special upcoming offers</h2>
+        <div class="offers-heading-div">
+          <h2 class="offers-heading">Special upcoming offers</h2>
+        </div>
         <div class="switch-tab-bar">
           <div class="switch-tab">
-            <button type="button">Team</button>
-            <button type="button">Couple</button>
-            <button type="button">Family</button>
+            <button class="switch-button team-button" type="button">Team</button>
+            <button class="switch-button couple-button" type="button">Couple</button>
+            <button class="switch-button family-button" type="button">Family</button>
           </div>
         </div>
         <div class="offers-tab-bar">
           <div class="offers-tab">
-
-            <article class="offer">
+            <article class="offer-article">
               <div class="offer-intro">
                 <img src="offer1.jpg" alt="Offer image" class="offer-image">
-                <time class="offer-date">14 FEB 2022</time>
+                <div class="offer-date-div">
+                  <div class="offer-date-wrapper">
+                    <time class="offer-date">14 FEB 2022</time>
+                  </div>
+                </div>
               </div>
               <div class="offer-caption">
                 <div class="offer-type-and-length">
@@ -107,10 +130,14 @@
               </div>
             </article>
 
-            <article class="offer">
+            <article class="offer-article">
               <div class="offer-intro">
                 <img src="offer2.jpg" alt="Offer image" class="offer-image">
-                <time class="offer-date">18 JUN 2022</time>
+                <div class="offer-date-div">
+                  <div class="offer-date-wrapper">
+                    <time class="offer-date">18 JUN 2022</time>
+                  </div>
+                </div>
               </div>
               <div class="offer-caption">
                 <div class="offer-type-and-length">
@@ -131,10 +158,14 @@
               </div>
             </article>
 
-            <article class="offer">
+            <article class="offer-article">
               <div class="offer-intro">
                 <img src="offer3.jpg" alt="Offer image" class="offer-image">
-                <time class="offer-date">22 DEC 2022</time>
+                <div class="offer-date-div">
+                  <div class="offer-date-wrapper">
+                    <time class="offer-date">22 DEC 2022</time>
+                  </div>
+                </div>
               </div>
               <div class="offer-caption">
                 <div class="offer-type-and-length">
@@ -157,7 +188,7 @@
 
           </div>
         </div>
-    </section>
+      </section>
       <section class="contact-us-section">
       <div class="side-image-tab">
         <img src="side-image.jpg" alt="Side image">
@@ -273,7 +304,7 @@
         </div>
       </section>
       <section class="register-section">
-        <img src="global.jpg" alt="Abstract image">
+        <img src="№№global.jpg" alt="Abstract image">
         <h2>Don't Miss The 50% Discount if You register Today</h2>
         <button class="register-button">Register Today</button>
       </section>
