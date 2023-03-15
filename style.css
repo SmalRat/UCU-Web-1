@@ -176,7 +176,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 2.5em;
 }
 .booking-menu img{
@@ -252,15 +252,11 @@ select::-ms-expand {
     border: none;
 }
 .tickets-search-outer-div{
-    height:100%;
+    width: 9.375em;
     aspect-ratio: 1 / 1;
-    /* display: flex;
-    flex-direction: column; */
     background-color: rgba(62, 134, 245, 0.8);
     border-radius: 100%;
-}
-.tickets-search-inner-div{
-    
+
 }
 .tickets-search-button{
     width: 100%;
@@ -268,6 +264,9 @@ select::-ms-expand {
     display: none;
     border-radius: 0;
     box-sizing: content-box;
+}
+.offers-section{
+    padding-bottom: 15em;
 }
 .offers-heading-div{
     text-align: center;
@@ -336,7 +335,7 @@ select::-ms-expand {
 }
 .offer-intro{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .offer-image{
     object-fit: cover;
@@ -378,3 +377,95 @@ select::-ms-expand {
     white-space: nowrap;
     letter-spacing: 1em;
 } */
+.offer-caption{
+    padding-left: 1.1875em;
+    padding-right: 1em;
+}
+.offer-type-and-length{
+    padding-top: 1.25em;
+    display: flex;
+    gap: 0.75em;
+}
+.offer-type{
+    border-radius: 7.14em;
+    padding: 0 1.14em;
+    font-size: 14px;
+}
+.relax-offer{
+    color: #F178B6;
+    background-color: #FCDDEC;
+}
+.adventure-offer{
+    color: #7879F1;
+    background-color: #F1F1FD;
+}
+.offer-length{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+}
+.offer-info{
+    padding-top: 0.625em;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    gap: 0.25em;
+}
+.offer-info h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.price-and-button-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    font-size: 24px;
+}
+.person{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.book-button{
+    font-size: 14px;
+    border-radius: 0.714em;
+    background-color: #F2F6FF;
+    color: #3E86F5;
+    padding: 0.928em 1.35em;
+    border: none;
+}
+.contact-us-section{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 1200px) { 
+    .contact-us-section { 
+        flex-direction: column;
+    }
+}
+.side-image-tab{
+    width: 50%;
+    padding-left: 8.125em;
+    padding-right: 6.875em;
+    box-sizing: border-box;
+}
+.side-text-tab{
+    width: 50%;
+    padding-right: 8.125em;
+    padding-left: 0.625em;
+    box-sizing: border-box;
+}
+.side-image-wrapper{
+    border-radius: 4.6875em;
+    overflow: hidden;
+    width: 480px;
+    height: 800px;
+    object-fit: fill;
+}
+.side-image-wrapper img{
+    width: 480px;
+    height: 800px;
+    object-fit: fill;
+}
