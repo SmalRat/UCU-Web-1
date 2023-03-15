@@ -762,27 +762,47 @@ select::-ms-expand {
 }
 
 .register-section{
-
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    width: 100%;
 }
 .register-section img{
     width: 82%;
+    aspect-ratio: 118 / 50;
     border-radius: 6.25em;
     overflow: hidden;
     object-fit: cover;
 }
 .register-section div{
-    left: 50%;
-    transform: translate(-50%);
     position: absolute;
+    left: 50%;
+    top: 22.8%;
+    transform: translate(-50%);
+    z-index: 2;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 .register-section h2{
+    text-align: center;
     color: white;
     font-size: 3em;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.register-section button{
+    border-radius: 1.25em;
+    background-color: white;
+    font-size: 1.25em;
+    margin-top: 4em;
+    color: #3E86F5;
+    padding: 1.25em 1.75em;
+    border: none;
+}
 
-}
-.register-section{
-    bo
-}
